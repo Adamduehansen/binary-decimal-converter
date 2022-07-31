@@ -15,7 +15,7 @@ function TabPanel({ tabTitle, children }: TabPanelProps): JSX.Element | null {
   }
 
   return (
-    <div role='tabpanel' id={tabPanelId}>
+    <div role='tabpanel' id={tabPanelId} className='p-2'>
       {children}
     </div>
   );

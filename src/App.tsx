@@ -5,12 +5,15 @@ import DecimalToBinary from './decimal-to-binary/DecimalToBinary';
 
 function App(): JSX.Element {
   return (
-    <main>
+    <main className='p-2'>
+      <header className='mb-4'>
+        <h1 className='text-2xl'>Binary and decimal converter</h1>
+      </header>
       <Tabs>
-        <TabPanel tabTitle='Binary to Decimal'>
+        <TabPanel tabTitle='Binary → Decimal'>
           <BinaryToDecimal />
         </TabPanel>
-        <TabPanel tabTitle='Decimal to Binary'>
+        <TabPanel tabTitle='Decimal → Binary'>
           <DecimalToBinary />
         </TabPanel>
       </Tabs>

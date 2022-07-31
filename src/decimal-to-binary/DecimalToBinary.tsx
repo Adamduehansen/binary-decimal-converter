@@ -33,9 +33,10 @@ function DecimalToBinary() {
         id='decimal-input'
         value={input}
         onChange={onInputChange}
+        autoFocus
       />
-      <div>
-        Binary: <span>{binary}</span>
+      <div className='text-gray-800'>
+        Binary: <span className='text-emerald-500'>{binary}</span>
       </div>
     </>
   );
