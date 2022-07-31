@@ -1,44 +1,39 @@
 import React, { useState } from 'react';
+import Input from '../components/Input';
 import { convertToBinary } from './convertToBinary';
 
-function isOnlyNumbers(input: string) {
-  return /^[0-9]+$/.test(input);
+function isNumeric(value: string) {
+  return /^-?\d+$/.test(value);
 }
 
 function DecimalToBinary() {
-  const [input, setInput] = useState(0);
+  const [input, setInput] = useState('0');
   const [binary, setBinary] = useState('0');
 
   const onInputChange = function (event: React.ChangeEvent<HTMLInputElement>) {
     const { value } = event.target;
 
-    if (value.length > 1 && !isOnlyNumbers(value)) {
-      return;
-    }
-
-    const enteredNumber = parseInt(value);
-
-    if (value.length === 0) {
-      setInput(enteredNumber);
+    if (value === '') {
+      setInput('');
       setBinary('0');
+    }
+
+    if (!isNumeric(value)) {
       return;
     }
 
-    setInput(enteredNumber);
-    setBinary(() => convertToBinary(enteredNumber));
+    setInput(value);
+    setBinary(() => convertToBinary(parseInt(value)));
   };
 
   return (
     <>
-      <div>
-        <label htmlFor='decimal-input'>Decimal Input</label>
-        <input
-          type='number'
-          id='decimal-input'
-          value={input}
-          onChange={onInputChange}
-        />
-      </div>
+      <Input
+        label='Decimal Input'
+        id='decimal-input'
+        value={input}
+        onChange={onInputChange}
+      />
       <div>
         Binary: <span>{binary}</span>
       </div>

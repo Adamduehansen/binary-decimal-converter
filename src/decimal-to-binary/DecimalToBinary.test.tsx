@@ -3,14 +3,14 @@ import DecimalToBinary from './DecimalToBinary';
 
 describe('DecimalToBinary', () => {
   test.each([
-    ['123', 123],
-    ['aga', 0],
+    ['1', '1'],
+    ['a', '0'],
   ])('should accept only number inputs', (value, expected) => {
     // Arrange
     render(<DecimalToBinary />);
 
     // Act
-    const input = screen.getByRole('spinbutton');
+    const input = screen.getByRole('textbox');
     fireEvent.change(input, {
       target: {
         value: value,
@@ -32,7 +32,7 @@ describe('DecimalToBinary', () => {
     render(<DecimalToBinary />);
 
     // Act
-    const input = screen.getByRole('spinbutton');
+    const input = screen.getByRole('textbox');
     fireEvent.change(input, {
       target: {
         value: value,

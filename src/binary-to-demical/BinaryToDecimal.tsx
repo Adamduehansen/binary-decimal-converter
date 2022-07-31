@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Input from '../components/Input';
 import { convertToDecimal, isBinaryNumber } from './convertToDecimal';
 
 function BinaryToDecimal(): JSX.Element {
@@ -16,15 +17,12 @@ function BinaryToDecimal(): JSX.Element {
 
   return (
     <>
-      <div>
-        <label htmlFor='binary-input'>Binary Input</label>
-        <input
-          type='text'
-          id='binary-input'
-          value={input}
-          onChange={onInputChange}
-        />
-      </div>
+      <Input
+        label='Binary Input'
+        id='binary-input'
+        value={input}
+        onChange={onInputChange}
+      />
       <div>Decimal: {decimal}</div>
     </>
   );
