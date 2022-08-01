@@ -8,7 +8,7 @@ function App(): JSX.Element {
     <main className='p-2 md:h-screen md:w-screen md:flex md:justify-center'>
       <div className='md:w-[500px]'>
         <header className='mb-4'>
-          <h1 className='text-2xl'>Binary and decimal converter</h1>
+          <h1 className='text-2xl'>Binary and Decimal Converter</h1>
         </header>
         <Tabs>
           <TabPanel tabTitle='Binary → Decimal'>
