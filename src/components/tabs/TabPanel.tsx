@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import createTabPanelId from '../../lib/createTabPanelId';
+import createTabPanelId from './createTabPanelId';
 import TabsContext from './TabsContext';
 
 export type TabPanelProps = React.PropsWithChildren<{

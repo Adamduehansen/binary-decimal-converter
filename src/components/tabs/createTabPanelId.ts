@@ -1,4 +1,4 @@
-import composeFunction from './composeFunction';
+import composeFunction from '../../lib/composeFunction';
 
 const createTabPanelId = composeFunction<string>(
   (value: string) => value.toLowerCase(),

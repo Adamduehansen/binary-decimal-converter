@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import createTabPanelId from '../../lib/createTabPanelId';
+import createTabPanelId from './createTabPanelId';
 import Tab from './Tab';
 import { TabPanelProps } from './TabPanel';
 import TabsContext from './TabsContext';
