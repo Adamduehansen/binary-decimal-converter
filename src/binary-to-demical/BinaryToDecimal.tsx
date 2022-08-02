@@ -24,8 +24,9 @@ function BinaryToDecimal(): JSX.Element {
         onChange={onInputChange}
         autoFocus
       />
-      <div className='text-gray-800'>
-        Decimal: <span className='text-emerald-500'>{decimal}</span>
+      <div className='text-gray-800 dark:text-white'>
+        Decimal:{' '}
+        <span className='text-emerald-500 dark:text-indigo-500'>{decimal}</span>
       </div>
     </>
   );

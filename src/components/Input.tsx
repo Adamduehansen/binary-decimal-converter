@@ -11,7 +11,7 @@ function Input({ label, ...inputProps }: Props): JSX.Element {
     <div className='my-2'>
       <label
         htmlFor={id}
-        className='block uppercase text-gray-600 text-sm pb-2'
+        className='block uppercase text-gray-600 text-sm pb-2 dark:text-white'
       >
         {label}
       </label>

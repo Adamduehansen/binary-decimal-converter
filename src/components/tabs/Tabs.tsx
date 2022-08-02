@@ -25,7 +25,7 @@ function Tabs({ children }: React.PropsWithChildren): JSX.Element {
         setSelectedTabId: setSelectedTabId,
       }}
     >
-      <div className='border'>
+      <div className='border dark:border-neutral-600'>
         <div role='tablist' className='flex justify-around h-16'>
           {React.Children.map(children, (child) => {
             const childProps = (child as React.ReactElement<TabPanelProps>)

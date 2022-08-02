@@ -18,7 +18,7 @@ function Tab({ title }: Props): JSX.Element {
       aria-selected={selected}
       aria-controls={tabId}
       className={classNames('w-full bg-gray-200', {
-        'bg-emerald-500 text-white': selected,
+        'bg-emerald-500 text-white dark:bg-indigo-500': selected,
       })}
       onClick={() => setSelectedTabId(tabId)}
     >
