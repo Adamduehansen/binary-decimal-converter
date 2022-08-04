@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/binary-decimal-converter/static/css/main.c9cc2e13.css",
-    "main.js": "/binary-decimal-converter/static/js/main.53069cb0.js",
+    "main.css": "/binary-decimal-converter/static/css/main.7b72c19d.css",
+    "main.js": "/binary-decimal-converter/static/js/main.621028f8.js",
     "static/js/787.ee4c14c2.chunk.js": "/binary-decimal-converter/static/js/787.ee4c14c2.chunk.js",
     "index.html": "/binary-decimal-converter/index.html",
-    "main.c9cc2e13.css.map": "/binary-decimal-converter/static/css/main.c9cc2e13.css.map",
-    "main.53069cb0.js.map": "/binary-decimal-converter/static/js/main.53069cb0.js.map",
+    "main.7b72c19d.css.map": "/binary-decimal-converter/static/css/main.7b72c19d.css.map",
+    "main.621028f8.js.map": "/binary-decimal-converter/static/js/main.621028f8.js.map",
     "787.ee4c14c2.chunk.js.map": "/binary-decimal-converter/static/js/787.ee4c14c2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c9cc2e13.css",
-    "static/js/main.53069cb0.js"
+    "static/css/main.7b72c19d.css",
+    "static/js/main.621028f8.js"
   ]
 }
